@@ -278,12 +278,3 @@ void CHudChat::SpectatorUpdate(const CSteamID &personID, const CSteamID &target)
     if (m_pSpectatorInfo)
         m_pSpectatorInfo->SpectatorUpdate(personID, target);
 }
-
-void CHudChat::SpectatorUpdate(const CSteamID &personID, const CSteamID &target)
-{
-    if (!m_pSpectatorInfo)
-        m_pSpectatorInfo = GET_HUDELEMENT(CHudSpectatorInfo);
-
-    if (m_pSpectatorInfo)
-        m_pSpectatorInfo->SpectatorUpdate(personID, target);
-}
